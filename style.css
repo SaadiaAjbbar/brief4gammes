@@ -44,7 +44,7 @@ body {
     width: 400px;
     height: 400px;
     display: grid;
-    gap: 10px;
+    gap: 6px;
     grid-template-columns: repeat(4,1fr);
     transform-style: preserve-3d;
     perspective: 500px;
@@ -58,6 +58,7 @@ body {
     font-size: 40px;
     background-color: aliceblue;
     position: relative;
+    transition: 0.25s;
 }
 .cardi::after{
     content: '';
@@ -65,4 +66,15 @@ body {
     inset: 0;
     background-color: rgb(199, 162, 114);
     border: 1px solid rgb(121, 128, 65);
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 0.25s;
+}
+.cardiOpen:after ,
+.cardiMatch:after
+{
+    transform: rotateY(180deg);
+}
+.cardi .cardiOpen{
+    transform: rotateY(0deg);
 }
