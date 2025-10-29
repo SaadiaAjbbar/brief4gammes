@@ -15,11 +15,20 @@
 
 
     <script>
+        const list=["1","1","2","2","3","3","4","4","5","5","6","6","7","7","8","8"];
+        for(let i=0;i<list.length;i++){
+            let card=document.createElement('div');
+            card.className='cardi';
+            card.innerHTML=list[i];
+            document.querySelector(".cards").appendChild(card);
+
+        }
         //fonction pour reinitialiser
         function resetFunc(){
          document.getElementsByClassName("reset-btn").reset;
 
         }
+
     </script>
 </body>
 </html>
