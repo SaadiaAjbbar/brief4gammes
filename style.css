@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+.container{
+    height: 90vh;
+    width: 90vh;
+    background-color: aqua;
+    gap: 10px;
+}
+.cards{
+    background-color: blueviolet;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}

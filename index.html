@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brief4</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Memory Gamme</h1>
+        <div class="cards"></div>
+        <button class="reset-btn" onclick="resetFunc()">reinitialiser</button>
+    </div>
+
+
+    <script>
+        //fonction pour reinitialiser
+        function resetFunc(){
+         document.getElementsByClassName("reset-btn").reset;
+
+        }
+    </script>
 </body>
 </html>
