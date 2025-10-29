@@ -17,10 +17,13 @@ for (let i = 0; i < list.length; i++) {
 
                     document.querySelectorAll('.cardiOpen')[0].classList.add('cardiMatch');
                     document.querySelectorAll('.cardiOpen')[1].classList.add('cardiMatch');
+                    //augmentation de score apres chaque matche cardi
+                    score++;
+                    document.getElementById('score').textContent = score;
 
                     //si ona fini tout les card et trouver tous  les matches 
                     if (document.querySelectorAll('.cardiMatch').length == list.length) {
-                        alert("BRAVO YOU WIN !!!!");
+                        alert("BRAVO YOU WIN !!!! \n votre score final est: " + score);
                     }
                     //remove ce nom de deux claqsse "cardiMatch"
                     document.querySelectorAll('.cardiOpen')[0].classList.remove('cardiOpen');
