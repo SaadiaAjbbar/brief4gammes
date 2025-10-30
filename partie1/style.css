@@ -60,6 +60,13 @@ body {
     position: relative;
     transition: 0.25s;
 }
+
+.cardi img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  pointer-events: none;
+}
 .cardi::after{
     content: '';
     position: absolute;

@@ -1,5 +1,24 @@
 
-const list = ["1", "3", "2", "7", "3", "1", "4", "4", "8", "5", "6", "6", "2", "7", "5", "8"];
+const list = [
+    '<img src="images/html.png" alt="html" width="60">',
+    '<img src="images/css.png" alt="css" width="60">',
+    '<img src="images/js.png" alt="js" width="60">',
+    '<img src="images/python.png" alt="python" width="60">',
+    '<img src="images/java.png" alt="java" width="60">',
+    '<img src="images/php.png" alt="php" width="60">',
+    '<img src="images/cpp.png" alt="cpp" width="60">',
+    '<img src="images/react.png" alt="react" width="60">',
+    '<img src="images/html.png" alt="html" width="60">',
+    '<img src="images/css.png" alt="css" width="60">',
+    '<img src="images/js.png" alt="js" width="60">',
+    '<img src="images/python.png" alt="python" width="60">',
+    '<img src="images/java.png" alt="java" width="60">',
+    '<img src="images/php.png" alt="php" width="60">',
+    '<img src="images/cpp.png" alt="cpp" width="60">',
+    '<img src="images/react.png" alt="react" width="60">'
+];
+list.sort(() => Math.random() - 0.5);
+
 let score = 0;
 for (let i = 0; i < list.length; i++) {
     let card = document.createElement('div');
