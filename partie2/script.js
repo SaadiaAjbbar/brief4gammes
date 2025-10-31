@@ -4,7 +4,7 @@ const input = document.getElementById("input");
 let score = 0;
 let time = 0;
 let wpm = 0;
-
+let taux_precision =0;
 
 // le text de input qui existe dans textpara (affiche deja)
 const textInput = "JS est un langage de programmation polyvalent utilise pour rendre les pages web interactives, mais aussi pour creer des applications web (frontend et backend)";
@@ -67,7 +67,8 @@ function startChrono() {
 
     if (i >= spans.length) {
       wpm=(spans.length/5)/(time/60);
-      alert(`temps termine ! votre score final  est :  score ${score} \n et votre vitesse :${wpm} wpm`);
+      taux_precision=(score/spans.length)*100;
+      alert(`votre score final  est :${score} \n  votre vitesse :${wpm} wpm \n taux de precision :${taux_precision} %  `);
       clearInterval(timer);
       window.location.reload();
     }
