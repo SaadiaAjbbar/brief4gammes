@@ -57,3 +57,23 @@ window.addEventListener('keydown', (e) => {
 
 
 });
+
+//gestion temps
+
+function startChrono() {
+  let timer = setInterval(() => {
+    time++;
+    document.getElementById("timer").innerText = time;
+
+    if (i >= spans.length) {
+      wpm=(spans.length/5)/(time/60);
+      alert(`temps termine ! votre score final  est :  score ${score} \n et votre vitesse :${wpm} wpm`);
+      clearInterval(timer);
+      window.location.reload();
+    }
+  }, 1000);
+
+  window.removeEventListener('keydown', startChrono);
+}
+
+window.addEventListener('keydown', startChrono);
