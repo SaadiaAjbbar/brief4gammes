@@ -58,3 +58,9 @@ button:hover {
   background-color: #fcfcfc;
   color: #441b53;
 }
+.correct{
+  color: green;
+}
+.incorrect{
+  color: red;
+}
